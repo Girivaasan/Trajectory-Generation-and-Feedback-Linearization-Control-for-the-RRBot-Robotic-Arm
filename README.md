@@ -14,5 +14,20 @@ source ~/RRbot_ros/devel/setup.bash
 cd ~/RRbot_ros/src
 git clone https://github.com/ros-simulation/gazebo_ros_demos.git
 ```
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt update
+sudo apt-get install ros-noetic-ros-control ros-noetic-ros-controllers
+sudo apt-get install ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control
+```
+##Cmake the workspace
+```
+cd ~/RRbot_ros
+catkin_make
+```
 
+```
+roslaunch rrbot_gazebo rrbot_world.launch
+```
 
