@@ -23,7 +23,7 @@ sudo apt update
 sudo apt-get install ros-noetic-ros-control ros-noetic-ros-controllers
 sudo apt-get install ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control
 ```
-## Catkine-make
+## Catkin-make
 ```
 cd ~/RRbot_ros
 catkin_make
