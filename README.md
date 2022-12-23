@@ -2,8 +2,12 @@
 
 #Creating a ROS Workspace
 
+...
 mkdir -p ~/RRbot_ros/src
 cd ~/RRbot_ros
 catkin_make
 echo "source ~/RRbot_ros/devel/setup.bash" >> ~/.bashrc
 source ~/RRbot_ros/devel/setup.bash
+...
+
+
