@@ -36,5 +36,8 @@ roslaunch rrbot_gazebo rrbot_world.launch
 
 https://user-images.githubusercontent.com/118299474/209412574-bb3b6c8b-1dce-431b-9b49-c7b86aa4136a.mp4
 
+## Performance Plots
+The plot depicts the desired trajectory generated, that must be followed by the rrbot manipulator and the performance of the manipulator. 
 
+![Screenshot from 2022-12-23 18-15-24](https://user-images.githubusercontent.com/118299474/209414132-8b97b38c-dbe2-436f-aa4b-aa9ba3209fb7.png)
 
