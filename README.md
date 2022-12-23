@@ -1,6 +1,7 @@
 # Trajectory-Generation-and-Feedback-Linearization-Control-for-the-RRBot-Robotic-Arm
 
 **Creating a ROS Workspace**
+
 Follow these commands
 ```
 mkdir -p ~/RRbot_ros/src
