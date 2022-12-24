@@ -36,7 +36,7 @@ roslaunch rrbot_gazebo rrbot_world.launch
 ```
 roslaunch rrbot_control rrbot_effort_control.launch
 ```
-After running the control node, run the 'rrbot_traj_control.m' matlab file provided in the repository.
+**After running the control node, run the 'rrbot_traj_control.m' matlab file provided in the repository.**
 
 https://user-images.githubusercontent.com/118299474/209412574-bb3b6c8b-1dce-431b-9b49-c7b86aa4136a.mp4
 
