@@ -77,17 +77,12 @@ while(t < 10)
     theta2_d_des = a2' * [0  1  2*t  3*t*t]';
     theta2_dd_des = a2' * [0  0  2  6*t]';
     
-    
-   
-
     theta_des = [theta1_des;theta2_des];
     theta_d_des = [theta1_d_des;theta2_d_des];
     theta_dd_des = [theta1_dd_des;theta2_dd_des];
 
     des_theta = [theta_des;theta_d_des];
     theta = [theta1;theta2;theta1_dot;theta2_dot];
-
-    %v = -K*([theta1;theta2;theta1_dot;theta2_dot] - [theta1_des; theta2_des; theta1_d_des; theta2_d_des]) + (theta1_dd_des+theta2_dd_des);
     v = ((-K)*(theta - des_theta)) + theta_dd_des;
     T = M*v + C + G;
 
@@ -114,28 +109,24 @@ plot(timeT,theta1_l);
 title('Theta1');
 xlabel('Time (t)');
 ylabel('Theta1 (rad) ');
-%plot(timeT,theta1_des);
 
 subplot(3,2,2);
 plot(timeT,theta2_l);
 title('Theta2');
 xlabel('Time (t)');
 ylabel('Theta2 (rad)');
-%plot(timeT,theta2_des);
 
 subplot(3,2,3);
 plot(timeT,theta1_dot_l);
 title('Theta1-dot');
 xlabel('Time (t)');
 ylabel('Theta1 - dot (rad/s)');
-%plot(timeT,theta1_d_des);
 
 subplot(3,2,4);
 plot(timeT,theta2_dot_l);
 title('Theta2-dot');
 xlabel('Time (t)');
 ylabel('Theta2 - dot (rad/s)');
-%plot(timeT,theta2_d_des,'b');
 
 subplot(3,2,5);
 plot(timeT,T1);
